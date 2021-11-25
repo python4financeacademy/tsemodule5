@@ -1,5 +1,5 @@
 """
-version 4.1
+version 5.0
 code by @Python4finance
 
 Sample :
