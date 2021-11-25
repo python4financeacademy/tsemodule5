@@ -3,11 +3,11 @@ version 5.0
 code by @Python4finance
 
 Sample :
-import tsemodule as tm
-tm.stocklist()   #show all stock names
-tm.stock(stock name,date range,get new file)
+import tsemodule5 as tm5
+tm5.stocklist()   #show all stock names
+tm5.stock(stock name,date range,get new file)
 for example:
-tm.stock("ABAD1",100,True)
+tm5.stock("شبندر",value=10)
 
 """
 import pandas as pd
