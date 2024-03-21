@@ -1,5 +1,5 @@
 """
-version 5.5
+version 5.60
 code by @Python4finance
 
 Last changes: list Updated.
@@ -11,16 +11,32 @@ for example:
 tm6.stock("شبندر",value=100,True)
 
 """
-ver=5.5
+ver=5.60
 try:   
     import sys
-    import pandas as pd
     import io
-    import requests as rq
-    
+    import subprocess
 except:
     print("Please install prerequisite Modules. pandas,requests should be installed.")
     sys.exit()
+    
+try:
+    import pandas as pd
+except ImportError:
+    print("Pandas not found,Please wait for install pandas ...")
+    subprocess.check_call([sys.executable, "-m", "pip", "install", 'pandas'])
+finally:
+    import pandas as pd
+
+try:
+    import requests as rq
+except ImportError:
+    print("Requests not found,Please wait for install requests ...")
+    subprocess.check_call([sys.executable, "-m", "pip", "install", 'requests'])
+finally:
+    import requests as rq
+    
+
 
 stocknames = {
 "آبادا":"37661500521100963",
@@ -1280,7 +1296,7 @@ def stocklist():
 
 
 def stockdetail(stock,type="namad"):
-    index_url_list="http://www.tsetmc.com/Loader.aspx?ParTree=111C1417"
+    index_url_list="http://old.tsetmc.com/Loader.aspx?ParTree=111C1417"
     fopen=rq.get(index_url_list).content
     df_stock_list=pd.DataFrame(pd.read_html(io.StringIO(fopen.decode("utf-8")),
                                  header=0,index_col=4)[0])
@@ -1309,7 +1325,9 @@ def stock(stockname="",value=100,newfile=False,standard=False,namadEn=False,prog
     
     try:
         urlid = stocknames[stockname]
-        url = 'http://www.tsetmc.com/tsev2/data/Export-txt.aspx?t=i&a=1&b=0&i=' + urlid
+        url = 'http://old.tsetmc.com/tsev2/data/Export-txt.aspx?t=i&a=1&b=0&i=' + urlid
+
+               
         
 
         #Read file content
@@ -1336,4 +1354,24 @@ def stock(stockname="",value=100,newfile=False,standard=False,namadEn=False,prog
 
     except:
         print("stockname Not Found, Please try again ...")
+
+
+def index(value=100,progress=True):
+    #try:
+        headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
+        url="https://cdn.tsetmc.com/api/Index/GetIndexB2History/32097828799138957"               
+        #Read index from api
+        df=rq.get(url, headers=headers).json()
+        df2=pd.DataFrame(df["indexB2"],columns=["insCode","dEven","xNivInuClMresIbs","xNivInuPbMresIbs","xNivInuPhMresIbs"])
+        df2.rename(columns={"dEven":"Date","xNivInuClMresIbs":"Close","xNivInuPbMresIbs":"Low","xNivInuPhMresIbs":"High"},inplace=True)
+        df2.set_index(pd.to_datetime(df2["Date"],format='%Y%m%d').dt.strftime("%Y-%m-%d") , inplace=True)
+        df2.drop(columns=["Date","insCode"],inplace=True)
+        df2=df2[::-1]
+        if not progress==False:
+                print("Download index ....")
+        return (df2.head(value))
+
+    #except:
+        print("Index not accessible, Please try again ...")
+
 
