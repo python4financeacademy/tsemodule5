@@ -17,7 +17,7 @@ A library for managing stock and index data from TSETMC.
 
 You can install the library using pip:
 
-bash
+#### bash:
 
     pip install tsemodel7
 
