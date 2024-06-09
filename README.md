@@ -1,3 +1,9 @@
+# tsemodel7
+
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEoQlwoNNcklrwuxs64Nc0HX3_QQIRLmTPRA&s
+
+A library for managing stock and index data from TSETMC.
+
 ### Project folder structure
 
     tsemodel7/
@@ -5,10 +11,6 @@
     │
     ├── setup.py
     └── README.md
-
-# tsemodel7
-
-A library for managing stock and index data from TSETMC.
 
 ## Installation
 
