@@ -13,14 +13,6 @@ A library for managing stock and index data from TSETMC.
     ├── setup.py
     └── README.md
 
-## Installation
-
-You can install the library using pip:
-
-#### bash:
-
-    pip install tsemodel7
-
 ### Example:
 
     from tsemodel7 import StockManager, IndexManager
