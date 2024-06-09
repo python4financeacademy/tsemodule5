@@ -33,10 +33,10 @@ bash
     print(index_manager.index(value=10))
 
 
-### output StockManager class:
+### Output FROM StockManager Class:
 ![image](https://github.com/Peyman2012/tsemodule7/assets/88220773/924892d8-1eb5-477a-a0bc-9ef9bcf8de62)
 
-### output IndexManager class:
+### Output FROM IndexManager Class:
 ![image](https://github.com/Peyman2012/tsemodule7/assets/88220773/389a83bd-0ff5-463a-b082-b3dba183b430)
 
 
