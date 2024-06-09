@@ -10,7 +10,7 @@ A library for managing stock and index data from TSETMC.
     tsemodel7/
     │
     │
-    ├── setup.py
+    ├── tsemodule7.py
     └── README.md
 
 ### Example:
