@@ -21,6 +21,8 @@ bash
 
     pip install tsemodel7
 
+### Example:
+
     from tsemodel7 import StockManager, IndexManager
 
     stock_manager = StockManager()
