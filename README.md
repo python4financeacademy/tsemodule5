@@ -1,6 +1,7 @@
 # tsemodel7
 
-https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEoQlwoNNcklrwuxs64Nc0HX3_QQIRLmTPRA&s
+![image](https://github.com/Peyman2012/tsemodule7/assets/88220773/cf3d963a-219b-46bc-b096-df52af9877c1)
+
 
 A library for managing stock and index data from TSETMC.
 
