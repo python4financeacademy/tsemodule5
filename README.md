@@ -18,7 +18,7 @@ A library for managing stock and index data from TSETMC.
 
 You can install the library using pip:
 
-```bash
+bash
 
     pip install tsemodel7
 
@@ -33,10 +33,10 @@ You can install the library using pip:
     print(index_manager.index(value=10))
 
 
-output StockManager:
+### output StockManager:
 ![image](https://github.com/Peyman2012/tsemodule7/assets/88220773/924892d8-1eb5-477a-a0bc-9ef9bcf8de62)
 
-output IndexManager:
+### output IndexManager:
 ![image](https://github.com/Peyman2012/tsemodule7/assets/88220773/389a83bd-0ff5-463a-b082-b3dba183b430)
 
 
