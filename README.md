@@ -2,10 +2,6 @@
 
     tsemodel7/
     │
-    ├── tsemodel7/
-    │   ├── __init__.py
-    │   ├── stock_manager.py
-    │   └── index_manager.py
     │
     ├── setup.py
     └── README.md
