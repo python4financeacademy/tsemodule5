@@ -29,8 +29,7 @@ You can install the library using pip:
 
     # Example calls
     print(stock_manager.stocklist())
-    print(stock_manager.stockdetail("آبادا", type="full"))
-    print(stock_manager.stock("آپ", value=10))
+    print(stock_manager.stock("آپ", value=10, standard=True))
     print(index_manager.index(value=10))
 
 
