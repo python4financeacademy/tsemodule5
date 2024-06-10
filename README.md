@@ -34,7 +34,8 @@ A library for managing stock and index data from TSETMC.
 ![image](https://github.com/Peyman2012/tsemodule7/assets/88220773/389a83bd-0ff5-463a-b082-b3dba183b430)
 
 ### Output FROM HighPriceManagerr Class:
-![image](https://github.com/Peyman2012/tsemodule7/assets/88220773/e94657a5-0e49-449c-b835-351a2f38fe48)
+![image](https://github.com/Peyman2012/tsemodule7/assets/88220773/961bc815-1d6f-4e5a-a1eb-36fdad9eb7ef)
+
 
 
 
