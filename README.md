@@ -9,8 +9,9 @@ A library for managing stock and index data from TSETMC.
 
     tsemodel7/
     │
-    │
-    ├── tsemodule7.py
+    │                   
+    ├── tsemodule7.py                     
+    |                   
     └── README.md
 
 ### Example:
@@ -31,6 +32,10 @@ A library for managing stock and index data from TSETMC.
 
 ### Output FROM IndexManager Class:
 ![image](https://github.com/Peyman2012/tsemodule7/assets/88220773/389a83bd-0ff5-463a-b082-b3dba183b430)
+
+### Output FROM HighPriceManagerr Class:
+![image](https://github.com/Peyman2012/tsemodule7/assets/88220773/e94657a5-0e49-449c-b835-351a2f38fe48)
+
 
 
 
