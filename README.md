@@ -5,7 +5,7 @@
 
 A library for managing stock and index data from TSETMC.
 
-### Project folder structure:
+## Project folder structure:
 
     tsemodel7/
     │
