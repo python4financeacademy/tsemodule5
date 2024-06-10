@@ -20,13 +20,6 @@ A library for managing stock and index data from TSETMC.
 
 The StockManager class allows you to easily manage, download, process, and extract information about various stocks. This class can be easily used in different projects and more functionality can be added to it by adding new features and methods.
 
-### Output FROM StockManager Class:
-![image](https://github.com/Peyman2012/tsemodule7/assets/88220773/924892d8-1eb5-477a-a0bc-9ef9bcf8de62)
-
-## IndexManager Class
-
-The IndexManager class allows you to easily manage data related to various stock market indices, download them, process them and extract the information you want. This class can be easily used in different projects and more functionality can be added by adding new features and methods.
-
 ### Example:
 
     from tsemodel7 import StockManager, IndexManager
@@ -38,6 +31,14 @@ The IndexManager class allows you to easily manage data related to various stock
     print(stock_manager.stocklist())
     print(stock_manager.stock("آپ", value=10, standard=True))
     print(index_manager.index(value=10))
+    
+### Output FROM StockManager Class:
+![image](https://github.com/Peyman2012/tsemodule7/assets/88220773/924892d8-1eb5-477a-a0bc-9ef9bcf8de62)
+
+## IndexManager Class
+
+The IndexManager class allows you to easily manage data related to various stock market indices, download them, process them and extract the information you want. This class can be easily used in different projects and more functionality can be added by adding new features and methods.
+
 
 ### Output FROM IndexManager Class:
 ![image](https://github.com/Peyman2012/tsemodule7/assets/88220773/389a83bd-0ff5-463a-b082-b3dba183b430)
