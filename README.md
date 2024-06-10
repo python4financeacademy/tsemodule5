@@ -33,6 +33,14 @@ A library for managing stock and index data from TSETMC.
 ### Output FROM IndexManager Class:
 ![image](https://github.com/Peyman2012/tsemodule7/assets/88220773/389a83bd-0ff5-463a-b082-b3dba183b430)
 
+### Example:
+
+    high_price_manager = HighPriceManager()
+
+    # Example calls
+    highest_close_prices_df = high_price_manager.get_highest_close_price_today(standard=True)
+    print(highest_close_prices_df)
+
 ### Output FROM HighPriceManagerr Class:
 ![image](https://github.com/Peyman2012/tsemodule7/assets/88220773/961bc815-1d6f-4e5a-a1eb-36fdad9eb7ef)
 
