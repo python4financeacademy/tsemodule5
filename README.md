@@ -42,7 +42,8 @@ A library for managing stock and index data from TSETMC.
     print(highest_close_prices_df)
 
 ### Output FROM HighPriceManagerr Class:
-![image](https://github.com/Peyman2012/tsemodule7/assets/88220773/961bc815-1d6f-4e5a-a1eb-36fdad9eb7ef)
+![image](https://github.com/Peyman2012/tsemodule7/assets/88220773/3472a97e-5bf6-4259-aa0b-b9fda93eb11f)
+
 
 
 
