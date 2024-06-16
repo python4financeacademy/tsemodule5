@@ -59,6 +59,10 @@ The get_highest_close_price_today method examines only the data from the previou
 ### Output FROM HighPriceManager Class:
 ![image](https://github.com/Peyman2012/tsemodule7/assets/88220773/3472a97e-5bf6-4259-aa0b-b9fda93eb11f)
 
+### Link library in my Kaggle:
+
+   https://www.kaggle.com/code/peimandaii/tsemodule7#Extended-version-of-the-library
+
 
 
 
