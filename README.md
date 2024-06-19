@@ -63,6 +63,8 @@ The get_highest_close_price_today method examines only the data from the previou
 
    https://www.kaggle.com/code/peimandaii/tsemodule7#Extended-version-of-the-library
 
+   https://www.kaggle.com/models/peimandaii/tsemodules
+
 
 
 
