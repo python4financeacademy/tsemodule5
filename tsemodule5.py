@@ -1,17 +1,19 @@
 """
-version 5.60
+version 5.61
 code by @Python4finance
 
 Last changes: list Updated.
+stockdetail function repaired...
 Sample :
 import tsemodule5 as tm5
 tm5.stocklist()   #show all stock names
 tm5.stock(stock name,date range,get new file)
 for example:
-tm6.stock("شبندر",value=100,True)
-
+tm5.stock("شبندر",value=100,True)
+tm5.index()   #show index data
 """
-ver=5.60
+ver=5.61
+
 try:   
     import sys
     import io
@@ -1296,11 +1298,11 @@ def stocklist():
 
 
 def stockdetail(stock,type="namad"):
-    index_url_list="http://old.tsetmc.com/Loader.aspx?ParTree=111C1417"
+    index_url_list="http://python4finance.ir/datafolder/stockdetails.html"
     fopen=rq.get(index_url_list).content
     df_stock_list=pd.DataFrame(pd.read_html(io.StringIO(fopen.decode("utf-8")),
                                  header=0,index_col=4)[0])
-
+    
     try:
         if stock=="list":
             return df_stock_list["نام"]
